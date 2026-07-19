@@ -17,14 +17,14 @@ int main(){
     */ 
 
     // 3. String and getline
-    /*string s1;
-    string s2;
-    cin >> s1,s2;
-    cout<<s1 <<" " << s2; 
+    // string s1;
+    // string s2;
+    // cin >> s1,s2;
+    // cout<<s1 <<" " << s2; 
 
     string str;
     getline(cin,str);
-    cout<<str;*/
+    cout<<str;
 
     // 4. Characters data types all the 356  single value can store.
 

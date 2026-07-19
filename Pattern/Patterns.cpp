@@ -1,36 +1,36 @@
-//  # include<bits/stdc++.h>
 
 // ****
 // ****
 // ****
 // ****
-
+// #include<bits/stdc++.h>
 // using namespace std;
 // void print1(int n){
-//     for(int i=0; i<=n; i++){
-//         for(int j=0; j<=n; j++){
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<n; j++){
 //             cout << "*";
 //         }
 //         cout << endl;
 //     }
 // }
-//     int main(){
-//         int n;
-//         cin >> n;
-//         print1(n);
+// int main(){
+//     int n;
+//     cin >> n;
+//     print1(n);
 // }
+
+ 
 // 2nd pattern
 // *
 // **
 // ***
 // ****
 // *****
-// # include<bits/stdc++.h>
+// #include<bits/stdc++.h>
 // using namespace std;
-
 // void print2(int n){
-//     for(int i=1; i<=n; i++){
-//         for(int j=1; j<=i; j++){
+//     for(int i=0; i<=n; i++){
+//         for(int j=0; j<=i; j++){
 //             cout << "*";
 //         }
 //         cout << endl;
@@ -48,21 +48,20 @@
 // 123
 // 1234
 // 12345
-// # include<bits/stdc++.h>
+
+// #include<bits/stdc++.h>
 // using namespace std;
 // void print3(int n){
-//     for(int i=1;i<=n;i++){
-//         for(int j=1;j<=i;j++){
-            
-//             cout << j << " " ;
+//     for(int i=1; i<=n; i++){
+//         for(int j=1; j<=i; j++){
+//             cout << j;
 //         }
 //         cout << endl;
 //     }
 // }
-
 // int main(){
 //     int t;
-//     for(int i = 0;i<t;i++){
+//     for(int i=0; i<t; i++){
 //         int n;
 //         cin >> n;
 //         print3(n);
@@ -75,21 +74,19 @@
 // 123
 // 12
 //1
-// # include<bits/stdc++.h>
+// #include<bits/stdc++.h>
 // using namespace std;
 // void print4(int n){
-//     for(int i=1;i<=n;i++){
-//         for(int j=1;j <= n - i + 1;j++){
-            
-//             cout << j ;
+//     for(int i=1; i<=n; i++){
+//         for(int j=1; j<=n-i+1; j++){
+//             cout << j;
 //         }
 //         cout << endl;
 //     }
 // }
-
 // int main(){
 //     int t;
-//     for(int i = 0;i<t;i++){
+//     for(int i=0; i<t; i++){
 //         int n;
 //         cin >> n;
 //         print4(n);
@@ -102,17 +99,16 @@
 //   *****
 //  *******
 // *********
-// # include<bits/stdc++.h>
+// #include<bits/stdc++.h>
 // using namespace std;
-// void print5(int n){
-//     for(int i=1;i<=n;i++){
 
-//         //space
-//         for(int j=1;j <=n-i;j++){
-            
-//             cout << " " ;
+// void print5(int n) {
+//     for(int i=1; i<=n; i++) {
+
+//         for(int j=1; j<=n-i; j++){
+//             cout << " ";
 //         }
-//         for(int j=1; j<=2*i-1;j++){
+//         for(int j=1; j<=2*i-1; j++){
 //             cout << "*";
 //         }
 //         cout << endl;
@@ -122,7 +118,7 @@
 // int main(){
 //     int t;
 //     cin >> t;
-//     for(int i = 0;i<t;i++){
+//     for(int i=0; i<t; i++){
 //         int n;
 //         cin >> n;
 //         print5(n);
@@ -135,23 +131,18 @@
 //   *****
 //    ***
 //     *
-
 // #include<bits/stdc++.h>
 // using namespace std;
 
-// void print6(int n){
-//     for(int i = 1; i <= n; i++){
+// void print5(int n) {
+//     for(int i=1; i<=n; i++) {
 
-//         // spaces
-//         for(int j = 1; j <= i - 1; j++){
+//         for(int j=1; j<=i-1; j++){
 //             cout << " ";
 //         }
-
-//         // stars
-//         for(int j = 1; j <= 2*n - (2*i - 1); j++){
+//         for(int j=1; j<=2*n-(2*i-1); j++){
 //             cout << "*";
 //         }
-
 //         cout << endl;
 //     }
 // }
@@ -159,84 +150,129 @@
 // int main(){
 //     int t;
 //     cin >> t;
-
-//     for(int i = 0; i < t; i++){
+//     for(int i=0; i<t; i++){
 //         int n;
 //         cin >> n;
-//         print6(n);
+//         print5(n);
 //     }
 // }
-// #include<bits/stdc++.h>
-// using namespace std;
 
-// int largestElement(vector<int> &arr, int n){
-//     int largest = arr[0];
-
-//     for(int i = 0; i < n; i++){
-//         if(arr[i] > largest){
-//             largest = arr[i];
-//         }
-//     }
-//     return largest;
-// }
-
-// int main(){
-//     vector<int> arr = {3, 7, 2, 9, 5};
-//     int n = arr.size();
-
-//     cout << largestElement(arr, n);
-// }
+// pattern 7
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+// *********
+//  *******
+//   *****
+//    ***
+//     *
 
 // #include<bits/stdc++.h>
 // using namespace std;
 
-// int largestElement(vector<int> &nums){
-//     int largest = nums[0];
+// void print7(int n){
 
-//     for(int i = 0; i < nums.size(); i++){
-//         if(nums[i] > largest){
-//             largest = nums[i];
+//     //Upper half
+
+//     for(int i=1; i<=n; i++){
+//         for(int j=1; j<=n-i; j++){
+//             cout << " ";
 //         }
+//         for(int j=1; j<=2*i-1; j++){
+//             cout << "*";
+//         }
+//         cout << endl;
 //     }
 
-//     return largest;
+//     // Lower half
+//     for(int i=1; i<=n; i++){
+//         for(int j=1; j<=i-1; j++){
+//             cout << " ";
+//         }
+//         for(int j=1; j<=2*n-(2*i-1); j++){
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+
+
 // }
 
 // int main(){
-//     vector<int> nums = {-4, -3, 0, 1, -8};
-
-//     int ans = largestElement(nums);
-
-//     cout << "Largest element is: " << ans;
-
-//     return 0;
+//     int t;
+//     cin >> t;
+//     for(int i=0; i<t; i++){
+//         int n;
+//         cin >> n;
+//         print7(n);
+//     }
 // }
+
+// Pattern 8
+// **********
+// ****  ****
+// ***    ***
+// **      **
+// *        *
+// *        *
+// **      **
+// ***    ***
+// ****  ****
+// **********
+
 
 #include<bits/stdc++.h>
 using namespace std;
 
-int secondLargest(vector<int> &nums){
-    int largest = INT_MIN;
-    int second = INT_MIN;
+void print8(int n){
 
-    for(int i = 0; i < nums.size(); i++){
+    // Upper half
+    for(int i=1; i<=n; i++){
 
-        if(nums[i] > largest){
-            second = largest;        // पुराना largest → second
-            largest = nums[i];       // नया largest
-        }
-        else if(nums[i] > second && nums[i] != largest){
-            second = nums[i];
-        }
+        // Left stars
+        for(int j=1; j<=n-i+1; j++)
+            cout << "*";
+
+        // Spaces
+        for(int j=1; j<=2*(i-1); j++)
+            cout << " ";
+
+        // Right stars
+        for(int j=1; j<=n-i+1; j++)
+            cout << "*";
+
+        cout << endl;
     }
 
-    if(second == INT_MIN) return -1;
+    // Lower half
+    for(int i=n; i>=1; i--){
 
-    return second;
+        // Left stars
+        for(int j=1; j<=n-i+1; j++)
+            cout << "*";
+
+        // Spaces
+        for(int j=1; j<=2*(i-1); j++)
+            cout << " ";
+
+        // Right stars
+        for(int j=1; j<=n-i+1; j++)
+            cout << "*";
+
+        cout << endl;
+    }
 }
 
 int main(){
-    vector<int> nums = {8, 8, 7, 6, 5};
-
-    cout << "Second largest: " << secondLargest(nums);
+    int t;
+    cin >> t;
+    for(int i=0; i<t; i++){
+        int n;
+        cin >> n;
+        print8(n);
+    }
 }
+
+ 

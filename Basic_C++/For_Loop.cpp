@@ -4,11 +4,14 @@ int main(){
     // for(int i = 10; i > 0; i=i - 1){
     //     cout<< i << endl;
     // }
+    // for(int i=1; i<=10; i++){
+    //     cout << i << endl;
+    // }
     // 1. using for loop print even number into 1 to 100
 
-    // for(int i = 0; i <=100; i++){
+    // for(int i=1; i <=100; i++){
     //     if(i %2==0){
-    //         cout<< i << endl ;
+    //         cout << i << endl;
     //     }
     // }
 
@@ -19,18 +22,21 @@ int main(){
     // for(int i=40; i>=20; i=i-2){
     //     cout << i <<" ";
     // }
+    // for(int i=20; i<=40; i=i+2){
+    //     cout << i << endl;
+    // }
 
     // for(int i=1; i<=5; i++){
     //     cout << "*****";
     //     cout << endl;
     // }
 
-    for(int i=1; i<=5; i++){
-        for(int j=1; j<=5; j--){
-            cout << j;
-        }
-        cout << endl;
-    }
+    // for(int i=1; i<=5; i++){
+    //     for(int j=1; j<=5; j--){
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
       
     
 
