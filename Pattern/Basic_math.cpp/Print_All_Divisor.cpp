@@ -107,6 +107,6 @@ int main() {
     return 0;
 }
 
-Time Complexity: O(sqrt(N)), we check for every number between 1 and sqaure root of N.
-Space Complexity: O(2*sqrt(N)), extra space used for storing divisors.
+// Time Complexity: O(sqrt(N)), we check for every number between 1 and sqaure root of N.
+// Space Complexity: O(2*sqrt(N)), extra space used for storing divisors.
 
