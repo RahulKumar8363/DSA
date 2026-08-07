@@ -19,17 +19,46 @@
 
 // 1
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+
+// int revNum(int i ,int n){
+//     if(i < 1)
+//     return 0;
+//     cout << i << endl;
+//     revNum(i - 1, n);
+// }
+
+// int main(){
+//     int n = 5;
+//     revNum(n,n);
+// }
+
+#include <bits/stdc++.h>
 using namespace std;
 
-int revNum(int i ,int n){
-    if(i < 1)
-    return 0;
-    cout << i << endl;
-    revNum(i - 1, n);
-}
+class Solution {
+public:
+    // Recursive function to print numbers from current down to 1 using backtracking
+    void printNumbers(int current) {
+        // Base case: if current is less than 1, stop recursion
+        if (current < 1)
+            return;
 
-int main(){
-    int n = 5;
-    revNum(n,n);
+        // Recursive call with previous number
+        printNumbers(current - 1);
+
+        // Print current number during backtracking
+        cout << current << endl;
+    }
+};
+
+int main() {
+    Solution sol;
+    int n = 10;
+
+    sol.printNumbers(n);
+    cout << "\n";
+
+    return 0;
 }
