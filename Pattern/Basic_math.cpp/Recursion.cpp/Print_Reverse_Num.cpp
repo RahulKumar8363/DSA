@@ -22,18 +22,20 @@
 // #include<iostream>
 // using namespace std;
 
-// int revNum(int i ,int n){
-//     if(i < 1)
-//     return 0;
+// int revnum(int i, int n){
+//     if( i==0 )
+//     return i;
 //     cout << i << endl;
-//     revNum(i - 1, n);
+//     revnum(i-1,n);
 // }
 
 // int main(){
-//     int n = 5;
-//     revNum(n,n);
+//     int n;
+//     cin >> n;
+//     revnum(n,n);
 // }
-
+ 
+// Another Mwthod
 #include <bits/stdc++.h>
 using namespace std;
 

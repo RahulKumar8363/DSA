@@ -31,15 +31,17 @@
 #include<iostream>
 using namespace std;
 
-int PrintN(int i , int n){
-    if(i > n)
-    return 0;
-    cout << i << endl;
-    PrintN(i+1, n);
+int count(int i, int n){
+    if( i> n)
+    return i;
+    cout<< i << endl;
+    count(i+1,n);
 }
+
 int main(){
-    int n =4;
-    PrintN(1,n);
+    int n;
+    cin >> n;
+    count(1,n);
 }
  
  
