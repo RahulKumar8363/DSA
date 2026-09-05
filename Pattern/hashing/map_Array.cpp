@@ -18,6 +18,11 @@ int main(){
         mpp[arr[i]]++;   // frequency increase
     }
 
+    // Iterate on the map
+    for(auto it : mpp){
+        cout << it.first << "->" << it.second << endl;
+    }
+
     int q;
     cin >> q;
 
