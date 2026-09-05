@@ -10,15 +10,21 @@ using namespace std;
 //non para
 
 // void PrintName(string name) {
+ 
 //     cout << "hey " << name << endl;
 // }
 // int main(){
 //     string name;
 //     cin >> name;
 //     PrintName(name);
+// }
+    
+
 //     string name2;
 //     cin >> name2;
- // PrintName(name2);
+//  PrintName(name2);
+// }
+
 
 // take two numbers and print its sum
 
@@ -30,10 +36,11 @@ using namespace std;
 // int main(){
 //     int num1, num2;
 //     cin >> num1 >> num2;
-//     int res =sum(num1, num2);
+//     int res=sum(num1, num2);
 //     cout<< res;
-//    return 0;    
-// // }
+//     return 0;
+// }  
+// }
 
 // int maxx(int num1, int num2){
 //     if(num1 >= num2) return num1;
@@ -43,6 +50,18 @@ using namespace std;
 //     int num1, num2;
 //     cin >> num1 >> num2;
 //     int maximum = maxx(num1, num2);
-//     cout << maximun;
+//     cout << maximum;
 //     return 0;
 // } 
+
+// int mult(int num1, int num2){
+//     int num3= num1 * num2;
+//     return num3;
+// }
+
+// int main(){
+//     int num1,num2;
+//     cin >> num1 >> num2;
+//     int res=mult(num1,num2);
+//     cout << res;
+// }
