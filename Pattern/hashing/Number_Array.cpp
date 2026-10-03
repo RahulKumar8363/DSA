@@ -6,23 +6,24 @@ int main(){
     cin >> n;
     int arr[n];
     for(int i=0; i<n; i++){
-        cin >> arr [i];
+        cin >> arr[i];
     }
 
-    // Precompute 
-    int hash[13]={0};
-    for(int i=0; i<n; i++){
-        hash [arr[i]] +=1;
+    // pre-computing for hashing
+    int hash[20]={0};
+    for(int i =0; i<n; i++){
+        hash[arr[i]]++;
     }
+
 
     int q;
     cin >> q;
-    while (q--){
+    while(q--){
         int number;
         cin >> number;
 
+        // fetch
         cout << hash[number] << endl;
     }
     return 0;
-
 }
