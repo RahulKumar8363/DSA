@@ -1,9 +1,9 @@
-#include<iostream>
-using namespace std;
-int main(){
-    cout<<"Hello World!";
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     cout<<"Hello World!";
+//     return 0;
+// }
 
 /* C++ Basic Input/Output
 
@@ -120,3 +120,14 @@ int main() {
     cout << "Value of x: " << x << " and y: " << y;
     return 0;
 }*/
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int x , y;
+//     cin >> x >> y;
+//     int sum=x+y;
+//     cout << sum;
+//     return 0;
+
+// }

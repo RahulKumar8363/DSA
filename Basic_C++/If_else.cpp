@@ -3,15 +3,14 @@ using namespace std;
 int main(){
     //Q1. Write a program that takes an input of age 
     // and prints if you are adult or not
-//     int age;
-//     cin >> age;
-//     if(age >=18){
-//         cout << " You are in Adult.";
-//     }
-//     else{
-//         cout << " You are not Adult";
-//     }
-// }
+//    int age;
+//    cin >> age;
+//    if(age >= 18){
+//     cout <<"You are Adult.";
+//    }
+//    else{
+//     cout << "You can't adult.";
+//    }
 
     /*
     A school has following rules for grading system:
@@ -23,29 +22,29 @@ int main(){
     f. 80 to 100 - A
     Ask user to enter marks and print the corresponding grade.
     */
-//    int marks;
-//    cin >> marks;
-//    if(marks <= 25){
-//     cout << "Grade F";
-//    }
-//    else if(marks <=39){
-//     cout << "Grade E";
-//    }
-//    else if(marks <= 49){
-//     cout << "Grade D";
-//    }
-//    else if(marks <=59){
-//     cout << "Grade C";
-//    }
-//    else if(marks <=79){
-//     cout << "Grade B";
-//    }
-//    else if(marks <= 100){
-//     cout << "Grade A";
-//    }
-//    else{
-//     cout << "Invalid Marks";
-//    }
+    int marks;
+    cin >> marks;
+    if(marks <= 25){
+        cout <<"You are Fail";
+    }
+    else if(marks <= 39){
+        cout << "Grade:E";
+    }
+    else if(marks <= 49){
+        cout <<"Grade = D";
+    }
+    else if(marks <= 59){
+        cout << " Grade = C";
+    }
+    else if(marks <= 79){
+        cout << "Grade = B";
+    }
+    else if(marks <= 100){
+        cout << "Grade = A";
+    }
+    else {
+        cout << "Invalid marks";
+    }
 
 /*
 Take the age from the user and then decided accordoingly.
@@ -59,21 +58,21 @@ print-> eligible for job and retirement soon.
 print-> Retriement time
 */    
 
-    int age;
-    cin >> age;
+    // int age;
+    // cin >> age;
 
-    if (age < 18) {
-        cout << "Not eligible for job";
-    }
-    else if (age >= 18 && age < 55) {
-        cout << "Eligible for job";
-    }
-    else if (age >= 55 && age <= 57) {
-        cout << "Eligible for job and retirement soon";
-    }
-    else { // age > 57
-        cout << "Retirement time";
-    }
+    // if (age < 18) {
+    //     cout << "Not eligible for job";
+    // }
+    // else if (age >= 18 && age < 55) {
+    //     cout << "Eligible for job";
+    // }
+    // else if (age >= 55 && age <= 57) {
+    //     cout << "Eligible for job and retirement soon";
+    // }
+    // else { // age > 57
+    //     cout << "Retirement time";
+    // }
 
     return 0;
 }
