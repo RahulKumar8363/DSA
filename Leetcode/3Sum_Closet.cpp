@@ -58,7 +58,7 @@ int threeSumClosest(vector<int>& nums, int target) {
                 right--;
             }
         }
-    }
+    } 
 
     return closestSum;
 }
