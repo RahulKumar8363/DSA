@@ -97,7 +97,6 @@ ListNode* createList(vector<int> values) {
 
     return dummy.next;
 }
-
 void printList(ListNode* head) {
     while (head != nullptr) {
         cout << head->val;
