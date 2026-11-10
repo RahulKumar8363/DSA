@@ -1,0 +1,52 @@
+
+// Example 1:
+
+// Input: s = "cba", k = 1
+// Output: "acb"
+// Explanation: 
+// In the first move, we move the 1st character 'c' to the end, obtaining the string "bac".
+// In the second move, we move the 1st character 'b' to the end, obtaining the final result "acb".
+// Example 2:
+
+// Input: s = "baaca", k = 3
+// Output: "aaabc"
+// Explanation: 
+// In the first move, we move the 1st character 'b' to the end, obtaining the string "aacab".
+// In the second move, we move the 3rd character 'c' to the end, obtaining the final result "aaabc".
+
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+string orderlyQueue(string s, int k) {
+
+    if (k > 1) {
+        sort(s.begin(), s.end());
+        return s;
+    }
+
+    string ans = s;
+
+    for (int i = 1; i < s.size(); i++) {
+
+        string rotated = s.substr(i) + s.substr(0, i);
+
+        if (rotated < ans) {
+            ans = rotated;
+        }
+    }
+
+    return ans;
+}
+
+int main() {
+
+    string s = "cba";
+    int k = 1;
+
+    cout << orderlyQueue(s, k);
+
+    return 0;
+}
