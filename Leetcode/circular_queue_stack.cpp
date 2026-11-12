@@ -1,0 +1,111 @@
+
+// Example 1:
+
+// Input
+// ["MyCircularQueue", "enQueue", "enQueue", "enQueue", "enQueue", "Rear", "isFull", "deQueue", "enQueue", "Rear"]
+// [[3], [1], [2], [3], [4], [], [], [], [4], []]
+// Output
+// [null, true, true, true, false, 3, true, true, true, 4]
+
+// Explanation
+// MyCircularQueue myCircularQueue = new MyCircularQueue(3);
+// myCircularQueue.enQueue(1); // return True
+// myCircularQueue.enQueue(2); // return True
+// myCircularQueue.enQueue(3); // return True
+// myCircularQueue.enQueue(4); // return False
+// myCircularQueue.Rear();     // return 3
+// myCircularQueue.isFull();   // return True
+// myCircularQueue.deQueue();  // return True
+// myCircularQueue.enQueue(4); // return True
+
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class MyCircularQueue {
+private:
+    vector<int> arr;
+    int front;
+    int rear;
+    int size;
+    int capacity;
+
+public:
+    MyCircularQueue(int k) {
+        arr.resize(k);
+        front = 0;
+        rear = -1;
+        size = 0;
+        capacity = k;
+    }
+
+    bool enQueue(int value) {
+        if (isFull()) {
+            return false;
+        }
+
+        rear = (rear + 1) % capacity;
+        arr[rear] = value;
+        size++;
+
+        return true;
+    }
+
+    bool deQueue() {
+        if (isEmpty()) {
+            return false;
+        }
+
+        front = (front + 1) % capacity;
+        size--;
+
+        return true;
+    }
+
+    int Front() {
+        if (isEmpty()) {
+            return -1;
+        }
+
+        return arr[front];
+    }
+
+    int Rear() {
+        if (isEmpty()) {
+            return -1;
+        }
+
+        return arr[rear];
+    }
+
+    bool isEmpty() {
+        return size == 0;
+    }
+
+    bool isFull() {
+        return size == capacity;
+    }
+};
+
+int main() {
+    MyCircularQueue q(3);
+
+    cout << boolalpha;
+
+    cout << q.enQueue(1) << endl;
+    cout << q.enQueue(2) << endl;
+    cout << q.enQueue(3) << endl;
+    cout << q.enQueue(4) << endl;
+
+    cout << q.Rear() << endl;
+    cout << q.isFull() << endl;
+
+    cout << q.deQueue() << endl;
+    cout << q.enQueue(4) << endl;
+
+    cout << q.Rear() << endl;
+
+    return 0;
+}
